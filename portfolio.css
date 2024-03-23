@@ -1,0 +1,124 @@
+/* styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Ribeye&display=swap');
+
+.imagem-fundo {
+    
+    border-radius: 55px;
+    width: 150px; /* largura da div */
+    height: 150px; /* altura da div */
+    background-image: url('eu2.jpg'); /* Caminho da imagem */
+    background-size: cover; /* ajusta o tamanho da imagem para cobrir toda a div */
+    background-position: center; /* posiciona a imagem no centro da div */
+}
+
+a{
+
+    text-decoration: none;
+
+}
+
+
+header{
+
+    background-color: #333;
+    height: 100px;
+    color: rgb(255, 250, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} 
+
+
+
+
+.main{
+/**/
+    display: flex;
+    
+    a{ /*essa tag vai mudar a cor de todos os links*/
+        color: rgb(0, 0, 0);
+    }
+
+    background-color: rgb(255, 255, 255);
+    /*Background-color diz sobre a cor da pagina*/
+
+
+
+}
+
+.center-content{
+/*conteudo centralizado*/
+
+    width: 500px;
+    display:block;
+
+
+}
+
+
+.menu{
+/*parte foto, lista etc..*/
+
+    width: 200px;
+    position: fixed;
+    margin-left: 15px;
+    margin-top: 15px;
+    
+        
+}
+
+body{
+     
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+        /* cor do texto*/
+    margin: 0px;
+    
+
+
+}   
+
+
+.main-content{
+/*Parte conteudo do site/texto*/
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: calc(100% - 10px);
+    min-height: 350px;
+    padding: 0px 15px;
+    /*primeiro numero para cima e para baixo, segundo= direita e esquerda*/
+
+}
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+    .menu {
+      display: none;
+    }
+    
+    .main{
+
+        background-color: orange;
+
+    }
+
+    
+
+
+
+
+
+}
+
+
+
+
+
+
