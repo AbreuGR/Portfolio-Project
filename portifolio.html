@@ -3,6 +3,7 @@
 <!--Para abrir-->
 
 
+
 <head>
 <!-- A html sempre começa com head e termina /head
 Link rel="stylesheet" href="teste.css"/> para linkar ao css, o js etc.
@@ -10,12 +11,12 @@ h1 ao h6 titulos e subtitulos -->
   <!--  <meta charset="UTF-8"> -->
 
     <meta name="viewport" content="width=device-width, initial-scale=5.0">
-    
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="portfolio.css"/>
+    <!--<link rel="stylesheet" href="portfolio.css"/> -->
 <!-- Linkar a outro arquivo ou linguagem -->
 
-    <title>Main Project</title>
+    <title>Portfolio project</title>
     
     
 </head>
@@ -26,12 +27,13 @@ h1 ao h6 titulos e subtitulos -->
 
 <body>  
 
+    
 
-    <header>
+   <header>
        
-        <div class="h1 titulo">
+        <div class="h1 titulo flex justify-center bg-black h-40 md:bg-gray-500">
 
-            <h1>GABRIEL ABREU RODRIGUES</h1>
+            <h1 class="text-white flex items-center text-3xl">GABRIEL ABREU RODRIGUES</h1>
 
         </div>
 
@@ -40,13 +42,15 @@ h1 ao h6 titulos e subtitulos -->
     </header>
     
 
-    <div class="main"> 
+    <div class="main flex bg-orange-500 text-white w-full md:bg-black"> 
 
 
-        <div class="menu">
+        <div class="menu w-52 fixed mt-3.5 ml-3.5">
         
             <!--div= Caixa de tags, tudo faz com div-->
-            <div class="imagem-fundo"> 
+            <div class="imagem-fundo bg-[url('eu2.jpg')] w-28 bg-cover bg-center rounded-2xl h-28"> 
+                
+                
                 <!--Class referente que estou colocando na div-->
                 <!-- Linkar a imagem css ao html -->    
             
@@ -57,47 +61,47 @@ h1 ao h6 titulos e subtitulos -->
             <ul>
     
                 <li>
-                    <a href="#sobre">Sobre</a>
+                    <a href="#sobre" class="sm:text-black md:text-white">Sobre</a>
                 </li>
     
                 <li> 
-                    <a href="#projetos">Projetos</a>
+                    <a href="#projetos" class="sm:text-black md:text-white">Projetos</a>
                 </li>
                 
                 <li>
-                    <a href="https://www.linkedin.com/in/gabrielabreurodrigues/" target="_blank">Meu Linkedin</a>
+                    <a href="https://www.linkedin.com/in/gabrielabreurodrigues/" class="sm:text-black md:text-white" target="_blank">Meu Linkedin</a>
                 </li>
     <!---->
 
                 <li>
-                    <a href="#cursos">Cursos</a>
+                    <a href="#cursos" class="sm:text-black md:text-white">Cursos</a>
                 </li>
                 
                 <li>
-                    <a href="#experiencia">Experiência</a>
+                    <a href="#experiencia" class="sm:text-black md:text-white">Experiência</a>
                 </li>
 
                 <li>
-                    <a href="#linguagens">Linguagens</a>
+                    <a href="#linguagens" class="sm:text-black md:text-white">Linguagens</a>
                 </li>
 
                 <li>
-                    <a href="#contato">Contato</a>
+                    <a href="#contato" class="sm:text-black md:text-white">Contato</a>
                 </li>
 
             </ul>
     
         </div>
     
-        <div class="main-content">
+        <div class="main-content flex w-full items-center justify-center min-h-96 p-0">
 
             <div>
 
                 
 
-                <section id="sobre" class="center-content">
+                <section id="sobre" class=" center-content items-center justify-center w-96 md:text-white">
                     
-                    <h1>Sobre</h1>
+                    <h1 class="text-2xl sm:text-black md:text-white mt-6">Sobre</h1>
                 
                     <!-- quando coloca h1 + style + color ou sla, você modifica
                     aquele paragrafo e da um estilo -->      
@@ -117,9 +121,9 @@ h1 ao h6 titulos e subtitulos -->
                 
                 
                 
-                <section id="projetos" class="center-content">
+                <section id="projetos" class="center-content w-96 my-5">
                     
-                    <h1>Projeto</h1>
+                    <h1 class="text-2xl sm:text-black md:text-white mt-6">Projeto</h1>
                 
                     <!-- quando coloca h1 + style + color ou sla, você modifica
                     aquele paragrafo e da um estilo -->      
@@ -141,9 +145,9 @@ h1 ao h6 titulos e subtitulos -->
                
 
 
-                <section id="cursos" class="center-content">
+                <section id="cursos" class="center-content w-96 block my-5">
 
-                    <h1>Cursos</h1>
+                    <h1 class="text-2xl sm:text-black md:text-white mt-6">Cursos</h1>
                     <ul>
                         
                         <li>Direito unisantos</li>                 
@@ -154,9 +158,9 @@ h1 ao h6 titulos e subtitulos -->
                 </section>
 
 
-                <section id="experiencia" class="center-content">
+                <section id="experiencia" class="center-content w-96 block my-5">
 
-                        <h1>Experiência</h1>
+                        <h1 class="text-2xl sm:text-black md:text-white mt-6">Experiência</h1>
 
                     <ul>
 
@@ -169,26 +173,28 @@ h1 ao h6 titulos e subtitulos -->
                 </section>
 
 
-                <section id="linguagens" class="center-content">
+                <section id="linguagens" class="center-content w-96 block my-5">
 
-                    <h1>Linguagens Dev</h1>
+                    <h1 class="text-2xl sm:text-black md:text-white mt-6">Linguagens Dev</h1>
 
                     <ul>
 
                         <li>HTML</li>
-                        <li>CSS</li>
+                        <li>CSS/ TAILWIND</li>
+                        <li>JAVASCRIPT</li>
+
 
                     </ul>
 
                 </section>
 
 
-                <section id="contato" class="center-content">
+                <section id="contato" class="center-content w-96 block my-5">
 
-                    <h1>Contato</h1>
+                    <h1 class="text-2xl sm:text-black md:text-white mt-6">Contato</h1>
 
                     <p>Número para contato: (13) 98840-3417;</p>
-                    <a href="mailto:gabriel-ar7@hotmail.com">Gabriel-ar7@hotmail.com</a>
+                    <a href="mailto:gabriel-ar7@hotmail.com" class="text-grey-700">Gabriel-ar7@hotmail.com</a>
 
 
 
@@ -209,7 +215,7 @@ h1 ao h6 titulos e subtitulos -->
     </div>
     
    
-    <script src="portfolio.js">portfoliojavascript</script>
+    <!--<script src="portfolio.js">portfoliojavascript</script>-->
 
 
 </body>
